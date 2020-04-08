@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"
+            app:cnb_iconColor="@color/home"
+             />
+    <item
+        android:id="@+id/nearby"
+        android:icon="@drawable/ic_info_outline_black_24dp"
+        android:title="Novel CORONA(COVID-19)"
+        app:cnb_iconColor="@color/home"
+        />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person_pin_black_24dp"
+        android:title="Profile"
+        app:cnb_iconColor="@color/home"
+        />
+</menu>

@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="DesignTextInput">
+
+        <item name="colorControlNormal">#FFFFFF</item>
+
+        <item name="colorControlActivated">#FFFFFF</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="text_Apearence" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:colorActivatedHighlight">@android:color/white</item>
+    </style>
+    <style name="EditText.White.Hint" parent="@style/EditText.White">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+    </style>
+    <style name="EditText.White" parent="@style/AppTheme">
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layoutMain"
+    android:background="@android:color/holo_red_dark"
+    android:layout_height="match_parent"
+    tools:context=".StepperPagerActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/pager"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@android:color/white"
+        android:alpha=".5"
+        android:layout_above="@+id/dots"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/dots"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"/>
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15ssp"
+        android:text="Skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnNext"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15ssp"
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

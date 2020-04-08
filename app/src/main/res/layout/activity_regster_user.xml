@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegsterUser">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/martel_semibold"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="@dimen/_17ssp"
+                android:text="@string/register_here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    app:errorEnabled="true"
+                    android:id="@+id/edtRegUserNameError"
+                    android:hint="@string/enter_full_name_first_middle_last"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRegUserName"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/edtRegUserDate"
+                        android:padding="@dimen/_3sdp"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_15ssp"
+                        android:text="@string/date_of_birth"
+                        android:layout_weight="0.8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioGroup
+                        android:padding="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_weight="1.2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <RadioButton
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:id="@+id/rdRegUserMale"
+                            android:text="@string/male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+                        <RadioButton
+                            android:id="@+id/rdRegUserFemale"
+                            android:text="@string/female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        app:errorEnabled="true"
+                        android:id="@+id/edtRegUserAgeError"
+                        android:hint="@string/age"
+                        android:layout_weight="0.4"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:id="@+id/edtRegUserAge"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        app:errorEnabled="true"
+                        android:id="@+id/edtRegUserEmailError"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:hint="@string/enter_e_mail_address"
+                        android:layout_weight="1.6"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:inputType="textEmailAddress"
+                            android:id="@+id/edtRegUserEmail"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="@string/enter_address"
+                    app:errorEnabled="true"
+                    android:id="@+id/edtRegUserAddError"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRegUserAdd"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="@string/enter_pincode"
+                    app:errorEnabled="true"
+                    android:id="@+id/edtRegUserPincodeError"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRegUserPincode"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="@string/enter_mobile_no"
+                    app:errorEnabled="true"
+                    android:id="@+id/edtRegUserMobileError"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRegUserMobile"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="@string/enter_optional_number"
+                    app:errorEnabled="true"
+                    android:id="@+id/edtRegUserOpError"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRegUserOpMobile"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    app:passwordToggleEnabled="true"
+                    android:id="@+id/edtRegUserConPassError"
+                    android:hint="@string/enter_password"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtRegUserPass"
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_centerInParent="true"
+                        android:id="@+id/btnRegisterrNewUser"
+                        android:clickable="true"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:background="@drawable/flash_background_design"
+                        android:text="@string/register"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:focusable="true" />
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/pbRegUser"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

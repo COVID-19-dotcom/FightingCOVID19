@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#FFFF0000</color>
+    <color name="colorAccent">#FFFF0000</color>
+
+    <color name="home">#FFFF0000</color>
+    <color name="nearby">#E5A919</color>
+    <color name="profile">#1194AA</color>
+
+    <color name="cyan_800">#00838F</color>
+</resources>
